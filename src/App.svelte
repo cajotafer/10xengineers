@@ -67,6 +67,9 @@
   button {
     cursor: pointer;
   }
+  i {
+    text-align: center;
+  }
 </style>
 
 <main>
@@ -109,6 +112,14 @@
   >
     Tweet
   </a>
+  <i class="spacing">
+    The origin of the 10xEngineer Quiz is
+    <a href="https://twitter.com/skirani/status/1149302828420067328"
+      >this tweet of Shekhar Kirani</a
+    >
+    that was highly rejected by the community. If you don't know about this,
+    just take a look.
+  </i>
   <script>
     window.twttr = (function(d, s, id) {
       var js,

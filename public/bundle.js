@@ -574,39 +574,54 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (99:30) 
+    // (102:30) 
     function create_if_block_2(ctx) {
-    	var h1, t0, t1, a, t2, t3, script;
+    	var h1, t0, t1, a0, t2, t3, i, t4, a1, t6, t7, script;
 
     	return {
     		c: function create() {
     			h1 = element("h1");
     			t0 = text(ctx.result);
     			t1 = space();
-    			a = element("a");
+    			a0 = element("a");
     			t2 = text("Tweet");
     			t3 = space();
+    			i = element("i");
+    			t4 = text("The origin of the 10xEngineer Quiz is\n    ");
+    			a1 = element("a");
+    			a1.textContent = "this tweet of Shekhar Kirani";
+    			t6 = text("\n    that was highly rejected by the community. If you don't know about this,\n    just take a look.");
+    			t7 = space();
     			script = element("script");
     			script.textContent = "window.twttr = (function(d, s, id) {\n      var js,\n        fjs = d.getElementsByTagName(s)[0],\n        t = window.twttr || {};\n      if (d.getElementById(id)) return t;\n      js = d.createElement(s);\n      js.id = id;\n      js.src = \"https://platform.twitter.com/widgets.js\";\n      fjs.parentNode.insertBefore(js, fjs);\n\n      t._e = [];\n      t.ready = function(f) {\n        t._e.push(f);\n      };\n\n      return t;\n    })(document, \"script\", \"twitter-wjs\");";
-    			add_location(h1, file, 99, 2, 2359);
-    			attr(a, "class", "twitter-share-button");
-    			attr(a, "href", "https://twitter.com/intent/tweet");
-    			a.dataset.size = "large";
-    			a.dataset.text = ctx.share;
-    			a.dataset.url = "https://dev.twitter.com/web/tweet-button";
-    			a.dataset.hashtags = "10xEngineer";
-    			a.dataset.related = "skirani, cajotafer, cvander, dhh, addyosmani";
-    			add_location(a, file, 100, 2, 2379);
-    			add_location(script, file, 111, 2, 2680);
+    			add_location(h1, file, 102, 2, 2393);
+    			attr(a0, "class", "twitter-share-button");
+    			attr(a0, "href", "https://twitter.com/intent/tweet");
+    			a0.dataset.size = "large";
+    			a0.dataset.text = ctx.share;
+    			a0.dataset.url = "https://10xengineers.netlify.com/";
+    			a0.dataset.hashtags = "10xEngineer";
+    			a0.dataset.related = "skirani, cajotafer, cvander, dhh, addyosmani";
+    			add_location(a0, file, 103, 2, 2413);
+    			attr(a1, "href", "https://twitter.com/skirani/status/1149302828420067328");
+    			add_location(a1, file, 116, 4, 2773);
+    			attr(i, "class", "spacing svelte-7i4fah");
+    			add_location(i, file, 114, 2, 2707);
+    			add_location(script, file, 122, 2, 2991);
     		},
 
     		m: function mount(target, anchor) {
     			insert(target, h1, anchor);
     			append(h1, t0);
     			insert(target, t1, anchor);
-    			insert(target, a, anchor);
-    			append(a, t2);
+    			insert(target, a0, anchor);
+    			append(a0, t2);
     			insert(target, t3, anchor);
+    			insert(target, i, anchor);
+    			append(i, t4);
+    			append(i, a1);
+    			append(i, t6);
+    			insert(target, t7, anchor);
     			insert(target, script, anchor);
     		},
 
@@ -616,7 +631,7 @@ var app = (function () {
     			}
 
     			if (changed.share) {
-    				a.dataset.text = ctx.share;
+    				a0.dataset.text = ctx.share;
     			}
     		},
 
@@ -624,15 +639,17 @@ var app = (function () {
     			if (detaching) {
     				detach(h1);
     				detach(t1);
-    				detach(a);
+    				detach(a0);
     				detach(t3);
+    				detach(i);
+    				detach(t7);
     				detach(script);
     			}
     		}
     	};
     }
 
-    // (86:31) 
+    // (89:31) 
     function create_if_block_1(ctx) {
     	var h2, t0_value = questions[ctx.count].q, t0, t1, div;
 
@@ -654,9 +671,9 @@ var app = (function () {
     			for (var i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
-    			add_location(h2, file, 86, 2, 2039);
-    			attr(div, "class", "btn-container spacing svelte-18u0w23");
-    			add_location(div, file, 87, 2, 2071);
+    			add_location(h2, file, 89, 2, 2073);
+    			attr(div, "class", "btn-container spacing svelte-7i4fah");
+    			add_location(div, file, 90, 2, 2105);
     		},
 
     		m: function mount(target, anchor) {
@@ -709,7 +726,7 @@ var app = (function () {
     	};
     }
 
-    // (73:2) {#if started === false}
+    // (76:2) {#if started === false}
     function create_if_block(ctx) {
     	var p, q, t1, br, t2, t3, h1, t4_value = landing.title, t4, t5, div, button, t6_value = landing.button, t6, dispose;
 
@@ -729,14 +746,14 @@ var app = (function () {
     			button = element("button");
     			t6 = text(t6_value);
     			attr(q, "cite", "https://twitter.com/skirani/status/1149302828420067328");
-    			add_location(q, file, 74, 4, 1619);
-    			add_location(br, file, 78, 4, 1835);
-    			add_location(p, file, 73, 2, 1611);
-    			add_location(h1, file, 81, 2, 1870);
-    			attr(button, "class", "svelte-18u0w23");
-    			add_location(button, file, 83, 4, 1937);
-    			attr(div, "class", "btn-container spacing svelte-18u0w23");
-    			add_location(div, file, 82, 2, 1897);
+    			add_location(q, file, 77, 4, 1653);
+    			add_location(br, file, 81, 4, 1869);
+    			add_location(p, file, 76, 2, 1645);
+    			add_location(h1, file, 84, 2, 1904);
+    			attr(button, "class", "svelte-7i4fah");
+    			add_location(button, file, 86, 4, 1971);
+    			attr(div, "class", "btn-container spacing svelte-7i4fah");
+    			add_location(div, file, 85, 2, 1931);
     			dispose = listen(button, "click", ctx.handleStart);
     		},
 
@@ -771,7 +788,7 @@ var app = (function () {
     	};
     }
 
-    // (89:4) {#each questions[count].r as option, i}
+    // (92:4) {#each questions[count].r as option, i}
     function create_each_block(ctx) {
     	var button, t0_value = ctx.option.text, t0, t1, button_data_value_value, button_data_validate_value, dispose;
 
@@ -782,8 +799,8 @@ var app = (function () {
     			t1 = space();
     			button.dataset.value = button_data_value_value = ctx.option.value;
     			button.dataset.validate = button_data_validate_value = ctx.option.robot;
-    			attr(button, "class", "svelte-18u0w23");
-    			add_location(button, file, 89, 4, 2155);
+    			attr(button, "class", "svelte-7i4fah");
+    			add_location(button, file, 92, 4, 2189);
     			dispose = listen(button, "click", ctx.handleClick);
     		},
 
@@ -844,15 +861,15 @@ var app = (function () {
     			t5 = text(" |\n  ");
     			a2 = element("a");
     			a2.textContent = "Github";
-    			add_location(main, file, 71, 0, 1576);
+    			add_location(main, file, 74, 0, 1610);
     			attr(a0, "href", "https://cajotafer.com");
-    			add_location(a0, file, 133, 13, 3219);
+    			add_location(a0, file, 144, 13, 3530);
     			attr(a1, "href", "https://twitter.com/cajotafer");
-    			add_location(a1, file, 134, 2, 3269);
+    			add_location(a1, file, 145, 2, 3580);
     			attr(a2, "href", "https://github.com/cajotafer");
-    			add_location(a2, file, 135, 2, 3325);
-    			attr(address, "class", "spacing svelte-18u0w23");
-    			add_location(address, file, 132, 0, 3180);
+    			add_location(a2, file, 146, 2, 3636);
+    			attr(address, "class", "spacing svelte-7i4fah");
+    			add_location(address, file, 143, 0, 3491);
     		},
 
     		l: function claim(nodes) {
