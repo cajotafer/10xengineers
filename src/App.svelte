@@ -103,7 +103,7 @@
     href="https://twitter.com/intent/tweet"
     data-size="large"
     data-text="{share}"
-    data-url="https://dev.twitter.com/web/tweet-button"
+    data-url="https://10xengineers.netlify.com/"
     data-hashtags="10xEngineer"
     data-related="skirani, cajotafer, cvander, dhh, addyosmani"
   >

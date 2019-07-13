@@ -84,7 +84,7 @@ export const questions = [
     ]
   },
   {
-    q: "Preferred style",
+    q: "Does your keyboard have worn keys?",
     r: [
       {
         value: 2,
