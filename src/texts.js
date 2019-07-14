@@ -202,6 +202,10 @@ export const questions = [
           "Even I have great knowledge, sometimes I need some help, it's normal."
       },
       {
+        value: 2,
+        text: "splice() or slice()?"
+      },
+      {
         value: 3,
         text:
           "I know it in memory and can recall from memory. I write code at the same ease as writing English. No breaks, no pauce, just type."
