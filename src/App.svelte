@@ -56,7 +56,8 @@
   function handleClick(e) {
     e.target.blur();
     total += parseInt(e.target.dataset.value);
-    count += 1;
+    if (e.target.dataset.validate === "true") robot = true;
+    else count += 1;
     if (count === questions.length) showResult(total);
   }
 </script>
@@ -106,7 +107,17 @@
     </button>
     {/each}
   </div>
-
+  {:else if finished === false && robot === true}
+  <h2>We just want to make sure</h2>
+  <form action="" method="POST" on:submit|preventDefault="{handleSubmit}">
+    <div id="recaptcha"></div>
+    <br />
+    <input type="submit" value="Submit" />
+  </form>
+  <script
+    src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    defer
+  ></script>
   {:else if finished === true}
   <h1>{result}</h1>
   <a
