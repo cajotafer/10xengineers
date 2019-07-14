@@ -1,6 +1,6 @@
 export const landing = {
   title: "Are you a 10x Engineer?",
-  button: "Start Quiz"
+  button: "Start Test"
 };
 
 export const questions = [
