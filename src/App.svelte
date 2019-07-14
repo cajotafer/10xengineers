@@ -163,5 +163,5 @@
 <address class="spacing">
   Created by <a href="https://cajotafer.com">Cajotafer</a> |
   <a href="https://twitter.com/cajotafer">Twitter</a> | Contribute on
-  <a href="https://github.com/cajotafer">Github</a>
+  <a href="https://github.com/cajotafer/10xengineers">Github</a>
 </address>
