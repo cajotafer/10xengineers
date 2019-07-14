@@ -12,8 +12,16 @@ This is a one-day-made sarcastic test to know your "engineer level" based in the
 - [Sahil Mansuri ](https://twitter.com/SVMansuri/status/1150052033350660096)showed that this theory can be applied to different areas and created its version to find 10xSalesPerson.
 - [Jane Manchun Wong](https://twitter.com/wongmjane) built [a website](http://10x.engineer/) to explain what a 10xEngineer is. Amazing job by the way.
 - [Arora](https://twitter.com/AroraXD) built [this website](https://10xengineer.glitch.me/) to show us the truth about 10xEngineers.
+- [Tierney Cyren](https://twitter.com/bitandbang) made something a bit different, [an open resource to share what a 1xEngineer is.](https://1x.engineer/).
+
+## You can contribute
+
+If you want to help making 10xEngineers Test better, just PR your idea, I am sure we can improve this test quality. The conributions are ruled by the [Code of Conduct](/cajotafer/10xengineers/blob/master/CODE_OF_CONDUCT.md) of the project.
+
+Let's make this world a better place to live together.
 
 ---
 
-Created by [Cajotafer](https://cajotafer.com)
+Created by [Cajotafer](https://cajotafer.com).
+
 [Twitter](https://twitter.com/cajotafer) | [Platzi](https://platzi.com/@Cajotafer/)
