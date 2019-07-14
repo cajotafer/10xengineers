@@ -574,7 +574,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (102:30) 
+    // (110:30) 
     function create_if_block_2(ctx) {
     	var h1, t0, t1, a0, t2, t3, i, t4, a1, t6, t7, script;
 
@@ -587,14 +587,14 @@ var app = (function () {
     			t2 = text("Tweet");
     			t3 = space();
     			i = element("i");
-    			t4 = text("The origin of the 10xEngineer Quiz is\n    ");
+    			t4 = text("The origin of the 10xEngineer Test is\n    ");
     			a1 = element("a");
-    			a1.textContent = "this tweet of Shekhar Kirani";
+    			a1.textContent = "this thread of Shekhar Kirani";
     			t6 = text("\n    that was highly rejected by the community. If you don't know about this,\n    just take a look.");
     			t7 = space();
     			script = element("script");
     			script.textContent = "window.twttr = (function(d, s, id) {\n      var js,\n        fjs = d.getElementsByTagName(s)[0],\n        t = window.twttr || {};\n      if (d.getElementById(id)) return t;\n      js = d.createElement(s);\n      js.id = id;\n      js.src = \"https://platform.twitter.com/widgets.js\";\n      fjs.parentNode.insertBefore(js, fjs);\n\n      t._e = [];\n      t.ready = function(f) {\n        t._e.push(f);\n      };\n\n      return t;\n    })(document, \"script\", \"twitter-wjs\");";
-    			add_location(h1, file, 102, 2, 2393);
+    			add_location(h1, file, 110, 2, 2557);
     			attr(a0, "class", "twitter-share-button");
     			attr(a0, "href", "https://twitter.com/intent/tweet");
     			a0.dataset.size = "large";
@@ -602,12 +602,12 @@ var app = (function () {
     			a0.dataset.url = "https://10xengineers.netlify.com/";
     			a0.dataset.hashtags = "10xEngineer";
     			a0.dataset.related = "skirani, cajotafer, cvander, dhh, addyosmani";
-    			add_location(a0, file, 103, 2, 2413);
+    			add_location(a0, file, 111, 2, 2577);
     			attr(a1, "href", "https://twitter.com/skirani/status/1149302828420067328");
-    			add_location(a1, file, 116, 4, 2773);
+    			add_location(a1, file, 124, 4, 2937);
     			attr(i, "class", "spacing svelte-7i4fah");
-    			add_location(i, file, 114, 2, 2707);
-    			add_location(script, file, 122, 2, 2991);
+    			add_location(i, file, 122, 2, 2871);
+    			add_location(script, file, 130, 2, 3156);
     		},
 
     		m: function mount(target, anchor) {
@@ -649,7 +649,7 @@ var app = (function () {
     	};
     }
 
-    // (89:31) 
+    // (96:50) 
     function create_if_block_1(ctx) {
     	var h2, t0_value = questions[ctx.count].q, t0, t1, div;
 
@@ -671,9 +671,9 @@ var app = (function () {
     			for (var i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
-    			add_location(h2, file, 89, 2, 2073);
+    			add_location(h2, file, 96, 2, 2236);
     			attr(div, "class", "btn-container spacing svelte-7i4fah");
-    			add_location(div, file, 90, 2, 2105);
+    			add_location(div, file, 97, 2, 2268);
     		},
 
     		m: function mount(target, anchor) {
@@ -726,7 +726,7 @@ var app = (function () {
     	};
     }
 
-    // (76:2) {#if started === false}
+    // (83:2) {#if started === false}
     function create_if_block(ctx) {
     	var p, q, t1, br, t2, t3, h1, t4_value = landing.title, t4, t5, div, button, t6_value = landing.button, t6, dispose;
 
@@ -746,14 +746,14 @@ var app = (function () {
     			button = element("button");
     			t6 = text(t6_value);
     			attr(q, "cite", "https://twitter.com/skirani/status/1149302828420067328");
-    			add_location(q, file, 77, 4, 1653);
-    			add_location(br, file, 81, 4, 1869);
-    			add_location(p, file, 76, 2, 1645);
-    			add_location(h1, file, 84, 2, 1904);
+    			add_location(q, file, 84, 4, 1797);
+    			add_location(br, file, 88, 4, 2013);
+    			add_location(p, file, 83, 2, 1789);
+    			add_location(h1, file, 91, 2, 2048);
     			attr(button, "class", "svelte-7i4fah");
-    			add_location(button, file, 86, 4, 1971);
+    			add_location(button, file, 93, 4, 2115);
     			attr(div, "class", "btn-container spacing svelte-7i4fah");
-    			add_location(div, file, 85, 2, 1931);
+    			add_location(div, file, 92, 2, 2075);
     			dispose = listen(button, "click", ctx.handleStart);
     		},
 
@@ -788,7 +788,7 @@ var app = (function () {
     	};
     }
 
-    // (92:4) {#each questions[count].r as option, i}
+    // (99:4) {#each questions[count].r as option, i}
     function create_each_block(ctx) {
     	var button, t0_value = ctx.option.text, t0, t1, button_data_value_value, button_data_validate_value, dispose;
 
@@ -800,7 +800,7 @@ var app = (function () {
     			button.dataset.value = button_data_value_value = ctx.option.value;
     			button.dataset.validate = button_data_validate_value = ctx.option.robot;
     			attr(button, "class", "svelte-7i4fah");
-    			add_location(button, file, 92, 4, 2189);
+    			add_location(button, file, 99, 4, 2352);
     			dispose = listen(button, "click", ctx.handleClick);
     		},
 
@@ -839,7 +839,7 @@ var app = (function () {
 
     	function select_block_type(ctx) {
     		if (ctx.started === false) return create_if_block;
-    		if (ctx.finished === false) return create_if_block_1;
+    		if (ctx.finished === false && ctx.robot === false) return create_if_block_1;
     		if (ctx.finished === true) return create_if_block_2;
     	}
 
@@ -861,15 +861,15 @@ var app = (function () {
     			t5 = text(" |\n  ");
     			a2 = element("a");
     			a2.textContent = "Github";
-    			add_location(main, file, 74, 0, 1610);
+    			add_location(main, file, 81, 0, 1754);
     			attr(a0, "href", "https://cajotafer.com");
-    			add_location(a0, file, 144, 13, 3530);
+    			add_location(a0, file, 152, 13, 3695);
     			attr(a1, "href", "https://twitter.com/cajotafer");
-    			add_location(a1, file, 145, 2, 3580);
+    			add_location(a1, file, 153, 2, 3745);
     			attr(a2, "href", "https://github.com/cajotafer");
-    			add_location(a2, file, 146, 2, 3636);
+    			add_location(a2, file, 154, 2, 3801);
     			attr(address, "class", "spacing svelte-7i4fah");
-    			add_location(address, file, 143, 0, 3491);
+    			add_location(address, file, 151, 0, 3656);
     		},
 
     		l: function claim(nodes) {
@@ -926,6 +926,7 @@ var app = (function () {
       let total = 0;
       let started = false;
       let finished = false;
+      let robot = false;
       let result = "";
       let share = "";
 
@@ -950,17 +951,17 @@ var app = (function () {
         switch (lvl) {
           case 10: {
             $$invalidate('result', result = `You are a ${lvl}x Engineer! Apple must hire you!`);
-            $$invalidate('share', share = `I'm a ${lvl}x Engineer! I'm preparing my CV! Do the quiz here ->`);
+            $$invalidate('share', share = `I'm a ${lvl}x Engineer! I'm preparing my CV! Do the test here ->`);
           }
           case 0: {
             $$invalidate('result', result =
               "I'm not sure you are an engineer, you have to effort... trust me");
             $$invalidate('share', share =
-              "I think my professional life needs some change. Maybe I am not an engineer. Do the quiz here ->");
+              "I think my professional life needs some change. Maybe I am not an engineer. Do the test here ->");
           }
           default: {
             $$invalidate('result', result = `You are a ${lvl}x Engineer! That is not enough.`);
-            $$invalidate('share', share = `I'm a ${lvl}x Engineer! What a shame. Do the quiz here ->`);
+            $$invalidate('share', share = `I'm a ${lvl}x Engineer! What a shame. Do the test here ->`);
           }
         }
 
@@ -969,8 +970,8 @@ var app = (function () {
 
       function handleClick(e) {
         e.target.blur();
-        $$invalidate('count', count += 1);
         total += parseInt(e.target.dataset.value);
+        $$invalidate('count', count += 1);
         if (count === questions.length) showResult(total);
       }
 
@@ -988,6 +989,7 @@ var app = (function () {
     		count,
     		started,
     		finished,
+    		robot,
     		result,
     		share,
     		handleStart,

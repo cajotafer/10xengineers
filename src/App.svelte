@@ -5,6 +5,7 @@
   let total = 0;
   let started = false;
   let finished = false;
+  let robot = false;
   let result = "";
   let share = "";
 
@@ -29,27 +30,33 @@
     switch (lvl) {
       case 10: {
         result = `You are a ${lvl}x Engineer! Apple must hire you!`;
-        share = `I'm a ${lvl}x Engineer! I'm preparing my CV! Do the quiz here ->`;
+        share = `I'm a ${lvl}x Engineer! I'm preparing my CV! Do the test here ->`;
       }
       case 0: {
         result =
           "I'm not sure you are an engineer, you have to effort... trust me";
         share =
-          "I think my professional life needs some change. Maybe I am not an engineer. Do the quiz here ->";
+          "I think my professional life needs some change. Maybe I am not an engineer. Do the test here ->";
       }
       default: {
         result = `You are a ${lvl}x Engineer! That is not enough.`;
-        share = `I'm a ${lvl}x Engineer! What a shame. Do the quiz here ->`;
+        share = `I'm a ${lvl}x Engineer! What a shame. Do the test here ->`;
       }
     }
 
     finished = true;
   }
 
+  function handleSubmit() {
+    robot = false;
+    count += 1;
+    if (count === questions.length) showResult(total);
+  }
+
   function handleClick(e) {
     e.target.blur();
-    count += 1;
     total += parseInt(e.target.dataset.value);
+    count += 1;
     if (count === questions.length) showResult(total);
   }
 </script>
@@ -86,7 +93,7 @@
   <div class="btn-container spacing">
     <button on:click="{handleStart}">{landing.button}</button>
   </div>
-  {:else if finished === false}
+  {:else if finished === false && robot === false}
   <h2>{questions[count].q}</h2>
   <div class="btn-container spacing">
     {#each questions[count].r as option, i}
@@ -99,6 +106,7 @@
     </button>
     {/each}
   </div>
+
   {:else if finished === true}
   <h1>{result}</h1>
   <a
@@ -113,9 +121,9 @@
     Tweet
   </a>
   <i class="spacing">
-    The origin of the 10xEngineer Quiz is
+    The origin of the 10xEngineer Test is
     <a href="https://twitter.com/skirani/status/1149302828420067328"
-      >this tweet of Shekhar Kirani</a
+      >this thread of Shekhar Kirani</a
     >
     that was highly rejected by the community. If you don't know about this,
     just take a look.
