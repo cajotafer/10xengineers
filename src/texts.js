@@ -5,7 +5,7 @@ export const landing = {
 
 export const questions = [
   {
-    q: "Do you love meetings?",
+    q: "What do you think about meetings?",
     r: [
       {
         value: 1,
@@ -44,7 +44,7 @@ export const questions = [
     ]
   },
   {
-    q: "Do you like team working?",
+    q: "Which one does describe you better?",
     r: [
       {
         value: 3,
@@ -100,7 +100,7 @@ export const questions = [
       },
       {
         value: 3,
-        text: "No, I code in my phone."
+        text: "No."
       },
       {
         value: 3,
@@ -109,7 +109,7 @@ export const questions = [
     ]
   },
   {
-    q: "Do you know your code?",
+    q: "Do you remember your code?",
     r: [
       {
         value: 1,
@@ -143,13 +143,16 @@ export const questions = [
       },
       {
         value: 2,
-        text:
-          "Yes, I can handle front-end and back-end. I am specialized in certain technologies."
+        text: "Yes, even I am specialized in certain technologies."
       },
       {
         value: 1,
         text:
           "No, I can code anything but I also do UI work... wait, but front-end and UI are related, isn't it?."
+      },
+      {
+        value: 1,
+        text: "No."
       }
     ]
   },
@@ -173,7 +176,7 @@ export const questions = [
   },
   {
     q:
-      "Given a product feature, you can write that entire feature in one or two sittings of 4 to 6 hours with a caffeinated drink without distraction.",
+      "Given a product feature, can write that entire feature in one or two sittings of 4 to 6 hours with a caffeinated drink without distraction?",
     r: [
       {
         value: 2,
@@ -219,7 +222,7 @@ export const questions = [
   },
   {
     q:
-      "I am learning new frameworks, languages ahead of everyone in the company. I gobble up, setup, experiment before anyone is getting started.",
+      "Are you learning new frameworks, languages ahead of everyone in the company? Do you gobble up, setup, experiment before anyone is getting started?",
     r: [
       {
         value: 1,
@@ -270,7 +273,7 @@ export const questions = [
     ]
   },
   {
-    q: "Do you write documentation?",
+    q: "Which one does describe better the way to write documentation?",
     r: [
       {
         value: 3,
