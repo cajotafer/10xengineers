@@ -102,6 +102,7 @@
     <div class="btn-container flex spacing">
       <button on:click={handleStart}>{landing.button}</button>
     </div>
+    <h3>Pronto en español 🇪🇸</h3>
   {:else if finished === false && robot === false}
     <h2>{questions[count].q}</h2>
     <div class="btn-container flex spacing">
