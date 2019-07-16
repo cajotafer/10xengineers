@@ -1,5 +1,5 @@
 <script>
-  import { landing, questions } from "./texts.js";
+  import { landing, questions } from "./lang/en.js";
   export let name;
   let count = 0;
   let total = 0;
@@ -15,32 +15,37 @@
 
   function showResult(total) {
     const MAX = 45;
-    let lvl = 9;
+    const STEP = 3;
+    let lvl = 0;
 
+    debugger;
     if (total === MAX) lvl = 10;
     else {
-      const STEP = 3;
       let reduc = MAX - STEP;
       for (let i = 9; i > 0; i--)
         if (total >= reduc) {
+          debugger;
           lvl = i;
           break;
         } else reduc -= STEP;
     }
     switch (lvl) {
       case 10: {
-        result = `You are a ${lvl}x Engineer! Apple must hire you!`;
-        share = `I'm a ${lvl}x Engineer! I'm preparing my CV! Do the test here ->`;
+        result = `You are a ${lvl}x Engineer! 🤑 Apple must hire you!`;
+        share = `I'm a ${lvl}x Engineer! 🤑 I'm preparing my CV! Do the test here ->`;
+        break;
       }
       case 0: {
         result =
-          "I'm not sure you are an engineer, you have to effort... trust me";
+          "I'm not sure you are an engineer, you have to effort... trust me 😒";
         share =
-          "I think my professional life needs some change. Maybe I am not an engineer. Do the test here ->";
+          "I think my professional life needs some change. 🤐 Maybe I am not an engineer. Do the test here ->";
+        break;
       }
       default: {
-        result = `You are a ${lvl}x Engineer! That is not enough.`;
-        share = `I'm a ${lvl}x Engineer! What a shame. Do the test here ->`;
+        result = `You are a ${lvl}x Engineer! 🤔 That is not enough.`;
+        share = `I'm a ${lvl}x Engineer! What a shame 🙄. Do the test here ->`;
+        break;
       }
     }
 
@@ -111,7 +116,7 @@
     {/each}
   </div>
   {:else if finished === false && robot === true}
-  <h2>We just want to make sure</h2>
+  <h2>We just want to make sure 🤖</h2>
   <form action="" method="POST" on:submit|preventDefault="{handleSubmit}">
     <div id="recaptcha"></div>
     <br />
