@@ -19,9 +19,3 @@ This is a one-day-made sarcastic test to know your "engineer level" based in the
 If you want to help making 10x Engineers Test better, just PR your idea, I am sure we can improve this test quality. The conributions are ruled by the [Code of Conduct](/cajotafer/10xengineers/blob/master/CODE_OF_CONDUCT.md) of the project.
 
 Let's make this world a better place to live together.
-
----
-
-Created by [Cajotafer](https://cajotafer.com).
-
-[Twitter](https://twitter.com/cajotafer) | [Platzi](https://platzi.com/@Cajotafer/)
