@@ -79,7 +79,7 @@ export const questions = [
       {
         value: 1,
         text:
-          "My don't remember my laptop screen background, surely is the default."
+          "I don't remember my laptop screen background, surely is the default."
       }
     ]
   },
