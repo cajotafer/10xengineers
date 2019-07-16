@@ -39,7 +39,7 @@ export const questions = [
       {
         value: 1,
         text:
-          "My timing is highly regular, even I like to code late-night, I know my responsabilities."
+          "My timing is highly regular, even I like to code late-night, I know my responsibilities."
       }
     ]
   },
@@ -54,7 +54,7 @@ export const questions = [
       {
         value: 1,
         text:
-          "I prefer to work in a quiet envioment. To share opinions and discoveries is important."
+          "I prefer to work in a quiet environment. To share opinions and discoveries is important."
       },
       {
         value: 1,
@@ -211,7 +211,7 @@ export const questions = [
       {
         value: 3,
         text:
-          "I know it in memory and can recall from memory. I write code at the same ease as writing English. No breaks, no pauce, just type."
+          "I know it in memory and can recall from memory. I write code at the same ease as writing English. No breaks, no pause, just type."
       },
       {
         value: 2,
