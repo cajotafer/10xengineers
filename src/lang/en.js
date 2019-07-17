@@ -13,7 +13,7 @@ export const common = {
   createdBy: "Created by",
   contribute: "Contribute on",
   changeLang: "Cambiar a español 🇪🇸",
-  changeLangLink: "https://10xengineers.netlify.com/es"
+  changeLangLink: "https://10xengineers.netlify.com/es/"
 };
 
 export function resultText(lvl) {
