@@ -1,7 +1,47 @@
-export const landing = {
+export const common = {
+  quote:
+    "If you have a 10x engineer as part of your first few engineers, you increase the odds of your startup success significantly.",
+  qAuthor: "Shekhar Kirani",
   title: "Are you a 10x Engineer?",
-  button: "Start Test"
+  button: "Start Test",
+  robot: "We just want to make sure 🤖",
+  origin: [
+    "The origin of the 10x Engineers Test is ",
+    "this thread of Shekhar Kirani",
+    " that was highly rejected by the community. If you don't know about this,just take a look."
+  ],
+  createdBy: "Created by",
+  contribute: "Contribute on",
+  changeLang: "Cambiar a español 🇪🇸",
+  changeLangLink: "https://10xengineers.netlify.com/es"
 };
+
+export function resultText(lvl) {
+  let r = 0;
+  switch (lvl) {
+    case 10:
+      r = `You are a ${lvl}x Engineer! 🤑 Apple must hire you!`;
+    case 0:
+      r = "I'm not sure you are an engineer, you have to effort... trust me 😒";
+    default:
+      r = `You are a ${lvl}x Engineer! 🤔 That is not enough.`;
+  }
+  return r;
+}
+
+export function shareText(lvl) {
+  let r = 0;
+  switch (lvl) {
+    case 10:
+      r = `I'm a ${lvl}x Engineer! 🤑 I'm preparing my CV! Do the test here ->`;
+    case 0:
+      r =
+        "I think my professional life needs some change. 🤐 Maybe I am not an engineer. Do the test here ->";
+    default:
+      r = `I'm a ${lvl}x Engineer! What a shame 🙄. Do the test here ->`;
+  }
+  return r;
+}
 
 export const questions = [
   {

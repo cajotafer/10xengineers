@@ -1,7 +1,47 @@
-export const landing = {
+export const common = {
+  quote:
+    "Si tienes a un 10x engineer como parte de tus primeros ingenieros, incrementas las posibilidades de éxito de tu startup significativamente.",
+  qAuthor: "Shekhar Kirani",
   title: "¿Eres un 10x Engineer?",
-  button: "Iniciar Test"
+  button: "Iniciar Test",
+  robot: "Sólo debemos asegurarnos 🤖",
+  origin: [
+    "El origen del 10x Engineers Test is ",
+    "este hilo de Shekhar Kirani en twitter",
+    " que fue fuertemente rechazado por la comunidad. Si no sabes de que estamos hablando, echa un vistazo."
+  ],
+  createdBy: "Creado por",
+  contribute: "Contribuye en",
+  changeLang: "Change to english 🇬🇧",
+  changeLangLink: "https://10xengineers.netlify.com"
 };
+
+export function resultText(lvl) {
+  let r = 0;
+  switch (lvl) {
+    case 10:
+      r = `¡Eres un ${lvl}x Engineer! 🤑 ¡Apple ya viene por ti!`;
+    case 0:
+      r = "No estoy seguro de que seas un ingeniero, créeme... esfuerzate 😒";
+    default:
+      r = `¡Eres un ${lvl}x Engineer! 🤔 y eso no es suficiente.`;
+  }
+  return r;
+}
+
+export function shareText(lvl) {
+  let r = 0;
+  switch (lvl) {
+    case 10:
+      r = `Soy un ${lvl}x Engineer! 🤑 Apple, ahí voy! Haz el test aquí ->`;
+    case 0:
+      r =
+        "Creo que mi vida necesita algunos cambios. 🤐 Quizás esto no es lo mío. Haz el test aquí ->";
+    default:
+      r = `Soy un ${lvl}x Engineer! Que pena 🙄. Haz el test aquí ->`;
+  }
+  return r;
+}
 
 export const questions = [
   {
@@ -176,7 +216,7 @@ export const questions = [
   },
   {
     q:
-      "Dada un requerimiento de producto, ¿puedes desarrollarlo en una o dos sesiones de 4 a 6 horas con un café y sin distracciones?",
+      "Dado un requerimiento de producto, ¿puedes desarrollarlo en una o dos sesiones de 4 a 6 horas con un café y sin distracciones?",
     r: [
       {
         value: 2,

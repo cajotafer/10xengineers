@@ -1,6 +1,7 @@
 <script>
-  import { landing, questions } from "./lang/en.js";
-  export let name;
+  export let texts;
+  export let lang;
+  const { common, questions, resultText, shareText } = texts
   let count = 0;
   let total = 0;
   let started = false;
@@ -18,36 +19,17 @@
     const STEP = 3;
     let lvl = 0;
 
-    debugger;
     if (total === MAX) lvl = 10;
     else {
       let reduc = MAX - STEP;
       for (let i = 9; i > 0; i--)
         if (total >= reduc) {
-          debugger;
           lvl = i;
           break;
         } else reduc -= STEP;
     }
-    switch (lvl) {
-      case 10: {
-        result = `You are a ${lvl}x Engineer! 🤑 Apple must hire you!`;
-        share = `I'm a ${lvl}x Engineer! 🤑 I'm preparing my CV! Do the test here ->`;
-        break;
-      }
-      case 0: {
-        result =
-          "I'm not sure you are an engineer, you have to effort... trust me 😒";
-        share =
-          "I think my professional life needs some change. 🤐 Maybe I am not an engineer. Do the test here ->";
-        break;
-      }
-      default: {
-        result = `You are a ${lvl}x Engineer! 🤔 That is not enough.`;
-        share = `I'm a ${lvl}x Engineer! What a shame 🙄. Do the test here ->`;
-        break;
-      }
-    }
+    result = resultText(lvl)
+    share = shareText(lvl)
 
     finished = true;
   }
@@ -92,17 +74,16 @@
   {#if started === false}
     <p>
       <q cite="https://twitter.com/skirani/status/1149302828420067328">
-        If you have a 10x engineer as part of your first few engineers, you
-        increase the odds of your startup success significantly.
+        {common.quote}
       </q>
       <br />
-      Shekhar Kirani
+      {common.qAuthor}
     </p>
-    <h1>{landing.title}</h1>
+    <h1>{common.title}</h1>
     <div class="btn-container flex spacing">
-      <button on:click={handleStart}>{landing.button}</button>
+      <button on:click={handleStart}>{common.button}</button>
     </div>
-    <h3>Pronto en español 🇪🇸</h3>
+    <a href="{common.changeLangLink}">{common.changeLang}</a>
   {:else if finished === false && robot === false}
     <h2>{questions[count].q}</h2>
     <div class="btn-container flex spacing">
@@ -116,7 +97,7 @@
       {/each}
     </div>
   {:else if finished === false && robot === true}
-    <h2>We just want to make sure 🤖</h2>
+    <h2>{common.robot}</h2>
     <form action="" method="POST" on:submit|preventDefault={handleSubmit}>
       <div id="recaptcha" />
       <br />
@@ -156,12 +137,11 @@
       </div>
     </div>
     <i class="spacing">
-      The origin of the 10x Engineers Test is
+      {common.origin[0]}
       <a href="https://twitter.com/skirani/status/1149302828420067328">
-        this thread of Shekhar Kirani
+        {common.origin[1]}
       </a>
-      that was highly rejected by the community. If you don't know about this,
-      just take a look.
+      {common.origin[2]}
     </i>
     <script>
       window.twttr = (function(d, s, id) {
@@ -197,10 +177,10 @@
   {/if}
 </main>
 <address class="spacing">
-  Created by
+  {common.createdBy}
   <a href="https://cajotafer.com">Cajotafer</a>
   |
   <a href="https://twitter.com/cajotafer">Twitter</a>
-  | Contribute on
+  | {common.contribute}
   <a href="https://github.com/cajotafer/10xengineers">Github</a>
 </address>
