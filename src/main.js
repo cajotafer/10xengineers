@@ -14,10 +14,10 @@ import {
 
 const lang = location.pathname;
 
-let common = lang === "/es" ? es_common : en_common;
-let questions = lang === "/es" ? es_questions : en_questions;
-let resultText = lang === "/es" ? es_resultText : en_resultText;
-let shareText = lang === "/es" ? es_shareText : en_shareText;
+let common = lang === "/es/" ? es_common : en_common;
+let questions = lang === "/es/" ? es_questions : en_questions;
+let resultText = lang === "/es/" ? es_resultText : en_resultText;
+let shareText = lang === "/es/" ? es_shareText : en_shareText;
 
 const app = new App({
   target: document.body,
