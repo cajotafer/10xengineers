@@ -2,6 +2,8 @@
 
 This is a one-day-made sarcastic test to know your "engineer level" based in the controversial [twitter thread of Shekhar Kirani](https://twitter.com/skirani/status/1149302828420067328) on `8:02 AM · Jul 11, 2019`, that was highly rejected by the community.
 
+Try the test in [English](https://10xengineers.netlify.com) or [Spanish](https://10xengineers.netlify.com/es/)
+
 ### Latest production deploy.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0a5b853b-fcf5-4240-ade0-ef7f346f2e81/deploy-status)](https://app.netlify.com/sites/10xengineers/deploys)
