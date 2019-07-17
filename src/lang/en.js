@@ -202,7 +202,7 @@ export const questions = [
       {
         value: 1,
         text:
-          "Even I have great knowledge, sometimes I need some help, it's normal."
+          "Yes, even I have great knowledge, sometimes I need some help, it's normal."
       },
       {
         value: 2,
@@ -215,7 +215,7 @@ export const questions = [
       },
       {
         value: 2,
-        text: "I told you I am not a robot.",
+        text: "I told you I am not a robot!",
         robot: true
       }
     ]
@@ -226,7 +226,7 @@ export const questions = [
     r: [
       {
         value: 1,
-        text: "Only on weekends, if I have the time."
+        text: "Only on weekends if I have the time."
       },
       {
         value: 2,
@@ -286,8 +286,7 @@ export const questions = [
       },
       {
         value: 2,
-        text:
-          "Of course, everything needs the proper documentation to better maintenance."
+        text: "Everything needs the proper documentation to better maintenance."
       }
     ]
   },

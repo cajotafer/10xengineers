@@ -1,268 +1,315 @@
 export const landing = {
-    title: "¿Eres un 10x Engineer?",
-    button: "Iniciar Test"
+  title: "¿Eres un 10x Engineer?",
+  button: "Iniciar Test"
 };
 
-export const questions = [{
-        q: "¿Qué piensas de las reuniones?",
-        r: [{
-                value: 1,
-                text: "Las reuniones son necesarias para construir una startup saludable y desarrollar la comunicación."
-            },
-            {
-                value: 3,
-                text: "Pienso que son una pérdida de tiempo, se discuten cosas obvias."
-            },
-            {
-                value: 3,
-                text: 'Solo asisto a "Reuniones de personal" convocadas por el gerente para discutir características y estado de producto.'
-            }
-        ]
-    },
-    {
-        q: "How about timing in the office? are you responsible with that?",
-        r: [{
-                value: 3,
-                text: "My timing is highly irregular, I am a late-night coder and come late to the office."
-            },
-            {
-                value: 2,
-                text: "My timing is sometimes irregular but I always try to be on time."
-            },
-            {
-                value: 1,
-                text: "My timing is highly regular, even I like to code late-night, I know my responsibilities."
-            }
-        ]
-    },
-    {
-        q: "Which one does describe you better?",
-        r: [{
-                value: 3,
-                text: "I prefer to work when very few folks are around. I am not visible in all-hands meetings."
-            },
-            {
-                value: 1,
-                text: "I prefer to work in a quiet environment. To share opinions and discoveries is important."
-            },
-            {
-                value: 1,
-                text: "I focus on my work (maybe listening music) and I like to share my opinions and discoveries."
-            }
-        ]
-    },
-    {
-        q: "Preferred style",
-        r: [{
-                value: 2,
-                text: "My laptop screen background is normally a landscape, I often change defaults."
-            },
-            {
-                value: 3,
-                text: "My laptop screen background color is black, I always change defaults."
-            },
-            {
-                value: 1,
-                text: "I don't remember my laptop screen background, surely is the default."
-            }
-        ]
-    },
-    {
-        q: "Does your keyboard have worn keys?",
-        r: [{
-                value: 2,
-                text: "Yes, keys such as a, s, d and w."
-            },
-            {
-                value: 2,
-                text: "Yes, keys such as q, w, e and r."
-            },
-            {
-                value: 3,
-                text: "Yes, keys such as i, f and x."
-            },
-            {
-                value: 3,
-                text: "No."
-            },
-            {
-                value: 3,
-                text: "No, I buy a new laptop every year."
-            }
-        ]
-    },
-    {
-        q: "Do you remember your code?",
-        r: [{
-                value: 1,
-                text: "I understand the code and is easy for me to find something but I don't know every line."
-            },
-            {
-                value: 3,
-                text: "I know every line of code that has gone into production so I fix bugs in hours vs days."
-            },
-            {
-                value: 2,
-                text: "I know every line of code that has gone into sandbox so I don't fix bugs in production."
-            },
-            {
-                value: 1,
-                text: "I am not a robot.",
-                robot: true
-            }
-        ]
-    },
-    {
-        q: "Are you a full-stack engineer?",
-        r: [{
-                value: 3,
-                text: "Yes, code is code, I don't care whether it is front-end, back-end, API, database, serverless, etc. and I rarely do UI work."
-            },
-            {
-                value: 2,
-                text: "Yes, even I am specialized in certain technologies."
-            },
-            {
-                value: 1,
-                text: "No, I can code anything but I also do UI work... wait, but front-end and UI are related, isn't it?."
-            },
-            {
-                value: 1,
-                text: "No."
-            }
-        ]
-    },
-    {
-        q: 'Can you convert "thought" into "code" in your mind and write it in an iterative fashion?',
-        r: [{
-                value: 3,
-                text: "Yes, I always do this."
-            },
-            {
-                value: 2,
-                text: "Yes, if that thought is easy to code."
-            },
-            {
-                value: 1,
-                text: "No."
-            }
-        ]
-    },
-    {
-        q: "Given a product feature, can write that entire feature in one or two sittings of 4 to 6 hours with a caffeinated drink without distraction?",
-        r: [{
-                value: 2,
-                text: "I don't like caffeinated drinks dude."
-            },
-            {
-                value: 3,
-                text: "Of course, I am doing this test before the second sitting."
-            },
-            {
-                value: 3,
-                text: "Let's make it a 3 hours sitting."
-            },
-            {
-                value: 1,
-                text: "Obviously that depends of the product feature complexity."
-            }
-        ]
-    },
-    {
-        q: "Do you look at help documentation of classes or methods?",
-        r: [{
-                value: 1,
-                text: "Even I have great knowledge, sometimes I need some help, it's normal."
-            },
-            {
-                value: 2,
-                text: "splice() or slice()?"
-            },
-            {
-                value: 3,
-                text: "I know it in memory and can recall from memory. I write code at the same ease as writing English. No breaks, no pause, just type."
-            },
-            {
-                value: 2,
-                text: "I told you I am not a robot.",
-                robot: true
-            }
-        ]
-    },
-    {
-        q: "Are you learning new frameworks, languages ahead of everyone in the company? Do you gobble up, setup, experiment before anyone is getting started?",
-        r: [{
-                value: 1,
-                text: "Only on weekends, if I have the time."
-            },
-            {
-                value: 2,
-                text: "I am working, not vacationing."
-            },
-            {
-                value: 3,
-                text: "This is my life story."
-            }
-        ]
-    },
-    {
-        q: "Do you like to teach others and share your experience?",
-        r: [{
-                value: 3,
-                text: "It takes too long to teach or discuss with others, I would rather do it myself."
-            },
-            {
-                value: 1,
-                text: "Of course! to share knowledge is necessary to have a better team so a better product."
-            }
-        ]
-    },
-    {
-        q: "Do you write quality code and know exactly how the code has to evolve, and have a mental model of overall code structure?",
-        r: [{
-                value: 3,
-                text: "Yes."
-            },
-            {
-                value: 2,
-                text: 'Sometimes I can\'t do some things and I have to find a "hack" temporarily.'
-            },
-            {
-                value: 1,
-                text: "Not at all, to make sure I define standards and document."
-            }
-        ]
-    },
-    {
-        q: "Which one does describe better the way to write documentation?",
-        r: [{
-                value: 3,
-                text: "I write at most one design document, and the rest is in the code."
-            },
-            {
-                value: 2,
-                text: "My code is self-documented."
-            },
-            {
-                value: 2,
-                text: "Of course, everything needs the proper documentation to better maintenance."
-            }
-        ]
-    },
-    {
-        q: "Is your life miserable with the process, meetings, training, and other non-value-added activities in your job?",
-        r: [{
-                value: 3,
-                text: "Yes, I'm considering looking for another job."
-            },
-            {
-                value: 2,
-                text: "Even I don't like that, my life is not miserable."
-            },
-            {
-                value: 1,
-                text: "No, all of that is part of the job and have some important non-technical values."
-            }
-        ]
-    }
+export const questions = [
+  {
+    q: "¿Qué piensas de las reuniones?",
+    r: [
+      {
+        value: 1,
+        text:
+          "Las reuniones son necesarias para construir una startup saludable y desarrollar la comunicación."
+      },
+      {
+        value: 3,
+        text: "Pienso que son una pérdida de tiempo, se discuten cosas obvias."
+      },
+      {
+        value: 3,
+        text:
+          'Solo asisto a "Reuniones de personal" convocadas por el gerente para discutir características y estado de producto.'
+      }
+    ]
+  },
+  {
+    q: "¿Qué tal tus tiempos en la oficina? ¿Eres responsable con eso?",
+    r: [
+      {
+        value: 3,
+        text:
+          "Mis tiempos son muy irregulares, me gusta programar hasta tarde así que llego tarde a la oficina."
+      },
+      {
+        value: 2,
+        text:
+          "Mis tiempos a veces son irregulares pero siempre trato de estar a tiempo."
+      },
+      {
+        value: 1,
+        text:
+          "Mis tiempos son muy regulares, aún cuando programo hasta tarde, conozco mis responsabilidades."
+      }
+    ]
+  },
+  {
+    q: "¿Cuál de estas opciones te describe mejor?",
+    r: [
+      {
+        value: 3,
+        text:
+          "Prefiero trabajar cuando hay pocas personas al rededor. No soy visible en reuniones de muchas manos."
+      },
+      {
+        value: 1,
+        text:
+          "Prefiero trabajar en un ambiente tranquilo. Compartir mis opiniones es importante."
+      },
+      {
+        value: 1,
+        text:
+          "Me enfoco en mi trabajo (quizás con música) y me gusta compartir opiniones y descubrimientos."
+      }
+    ]
+  },
+  {
+    q: "Estilo preferido",
+    r: [
+      {
+        value: 2,
+        text:
+          "El fondo de pantalla de mi laptop normalmente es un paisaje, suelo cambiar los valores por defecto."
+      },
+      {
+        value: 3,
+        text:
+          "El fondo de pantalla de mi laptop es negro y siempre cambio los valores por defecto."
+      },
+      {
+        value: 1,
+        text:
+          "No recuerdo el fondo de pantalla de mi laptop, seguramente es el por defecto."
+      }
+    ]
+  },
+  {
+    q: "¿Tu teclado tiene teclas desgastadas?",
+    r: [
+      {
+        value: 2,
+        text: "Si, las teclas a, s, d y w."
+      },
+      {
+        value: 2,
+        text: "Si, las teclas q, w, e y r."
+      },
+      {
+        value: 3,
+        text: "Si, las teclas i, f y x."
+      },
+      {
+        value: 3,
+        text: "No."
+      },
+      {
+        value: 3,
+        text: "No, cada año compro una laptop nueva."
+      }
+    ]
+  },
+  {
+    q: "¿Recuerdas lo que programas?",
+    r: [
+      {
+        value: 1,
+        text:
+          "Entiendo el código y para mí es fácil encontrar lo que sea pero no conozco cada línea."
+      },
+      {
+        value: 3,
+        text:
+          "Conozco cada línea de código que está en producción, así que soluciono errores en horas en lugar de días."
+      },
+      {
+        value: 2,
+        text:
+          "Conozco cada línea de código que está en el entorno de pruebas y así no hay conflictos en producción."
+      },
+      {
+        value: 1,
+        text: "No soy un robot.",
+        robot: true
+      }
+    ]
+  },
+  {
+    q: "¿Eres un ingeniero full-stack?",
+    r: [
+      {
+        value: 3,
+        text:
+          "Si, código es código, no importa si es front-end, back-end, API, base de datos, serverless, etc. Rara vez hago trabajo de UI."
+      },
+      {
+        value: 2,
+        text: "Si, además me especializo en ciertas tecnologías."
+      },
+      {
+        value: 1,
+        text:
+          "No, puedo programar lo que sea pero también hago trabajo de UI... espera, pero front-end y UI están relacionados, ¿o no?"
+      },
+      {
+        value: 1,
+        text: "No."
+      }
+    ]
+  },
+  {
+    q:
+      '¿Puedes convertir "pensamientos" a "código" en tu mente y escribirlos de manera iterativa?',
+    r: [
+      {
+        value: 3,
+        text: "Si, es lo que siempre hago."
+      },
+      {
+        value: 2,
+        text: "Si, si lo que pienso es fácil."
+      },
+      {
+        value: 1,
+        text: "No."
+      }
+    ]
+  },
+  {
+    q:
+      "Dada un requerimiento de producto, ¿puedes desarrollarlo en una o dos sesiones de 4 a 6 horas con un café y sin distracciones?",
+    r: [
+      {
+        value: 2,
+        text: "Pero ni me gusta el café."
+      },
+      {
+        value: 3,
+        text:
+          "Por supuesto, estoy haciendo este test justo antes de la segunda sesión."
+      },
+      {
+        value: 3,
+        text: "Hagamos que sea una sesión de 3 horas."
+      },
+      {
+        value: 1,
+        text: "Obviamente depende de la complejidad del requerimiento."
+      }
+    ]
+  },
+  {
+    q: "¿Buscas ayuda en la documentación de clases o métodos?",
+    r: [
+      {
+        value: 1,
+        text:
+          "Si, a pesar de mi conocimiento a veces necesito ayuda, es normal."
+      },
+      {
+        value: 2,
+        text: "splice() o slice()?"
+      },
+      {
+        value: 3,
+        text:
+          "Los sé de memoria. Escribo código tan fácil como escribo español, sin descansos, sin pausa, sólo escribo."
+      },
+      {
+        value: 2,
+        text: "¡Te dije que no soy un robot!",
+        robot: true
+      }
+    ]
+  },
+  {
+    q:
+      "¿Estás aprendiendo nuevos frameworks, lenguajes primero que cualquiera en la compañía?, ¿Lo lees, configuras y experimentas antes que otros?",
+    r: [
+      {
+        value: 1,
+        text: "Sólo los fines de semana si tengo tiempo."
+      },
+      {
+        value: 2,
+        text: "Estoy trabajando, no de vacaciones."
+      },
+      {
+        value: 3,
+        text: "Eso describe exactamente mi vida."
+      }
+    ]
+  },
+  {
+    q: "¿Te gusta enseñar a otros y compartir tu experiencia?",
+    r: [
+      {
+        value: 3,
+        text:
+          "Toma mucho tiempo enseñar o discutir con otros, mejor lo haría yo mismo."
+      },
+      {
+        value: 1,
+        text:
+          "¡Claro! compartir conocimiento es necesario para que el equipo mejore y el producto final."
+      }
+    ]
+  },
+  {
+    q:
+      "¿Escribes código de calidad, sabes exactamente como debe evolucionar y tienes un modelo mental de toda la estructura general?",
+    r: [
+      {
+        value: 3,
+        text: "Si."
+      },
+      {
+        value: 2,
+        text:
+          "Algunas veces no puedo hacer algo y me veo obligado a usar un truco temporalmente."
+      },
+      {
+        value: 1,
+        text: "No del todo, me encargo de definir estándares y documentar."
+      }
+    ]
+  },
+  {
+    q:
+      "¿Cuál de estas opciones define mejor la forma en la que preparas documentación?",
+    r: [
+      {
+        value: 3,
+        text:
+          "Escribo como máximo un documento de diseño, el resto está en el código."
+      },
+      {
+        value: 2,
+        text: "Mi código está auto-documentado."
+      },
+      {
+        value: 2,
+        text:
+          "Todo necesita una documentación adecuada para un mejor mantenimiento."
+      }
+    ]
+  },
+  {
+    q:
+      "¿Tu vida es miserable con los procesos, reuniones, entrenamientos y otras actividades sin valor añadido en tu trabajo?",
+    r: [
+      {
+        value: 3,
+        text: "Si, estoy considerando buscar otro trabajo."
+      },
+      {
+        value: 2,
+        text: "Aunque no me gusta, mi vida no es miserable."
+      },
+      {
+        value: 1,
+        text:
+          "No, todo eso es parte del trabajo y tiene un importante valor no técnico."
+      }
+    ]
+  }
 ];
