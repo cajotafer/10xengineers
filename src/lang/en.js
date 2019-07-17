@@ -1,6 +1,5 @@
 export const common = {
-  quote:
-    "If you have a 10x engineer as part of your first few engineers, you increase the odds of your startup success significantly.",
+  quote: "If you have a 10x engineer as part of your first few engineers, you increase the odds of your startup success significantly.",
   qAuthor: "Shekhar Kirani",
   title: "Are you a 10x Engineer?",
   button: "Start Test",
@@ -13,7 +12,8 @@ export const common = {
   createdBy: "Created by",
   contribute: "Contribute on",
   changeLang: "Cambiar a español 🇪🇸",
-  changeLangLink: "https://10xengineers.netlify.com/es/"
+  changeLangLink: "https://10xengineers.netlify.com/es/",
+  or: "or"
 };
 
 export function resultText(lvl) {
@@ -43,34 +43,27 @@ export function shareText(lvl) {
   return r;
 }
 
-export const questions = [
-  {
+export const questions = [{
     q: "What do you think about meetings?",
-    r: [
-      {
+    r: [{
         value: 1,
-        text:
-          "Meetings are necessary to build a healthy startup and develop the team communication."
+        text: "Meetings are necessary to build a healthy startup and develop the team communication."
       },
       {
         value: 3,
-        text:
-          "I think it is a waste of time and obvious things are being discussed."
+        text: "I think it is a waste of time and obvious things are being discussed."
       },
       {
         value: 3,
-        text:
-          'I only attend "Staff meetings" called by the manager to discuss features and status.'
+        text: 'I only attend "Staff meetings" called by the manager to discuss features and status.'
       }
     ]
   },
   {
     q: "How about timing in the office? are you responsible with that?",
-    r: [
-      {
+    r: [{
         value: 3,
-        text:
-          "My timing is highly irregular, I am a late-night coder and come late to the office."
+        text: "My timing is highly irregular, I am a late-night coder and come late to the office."
       },
       {
         value: 2,
@@ -78,55 +71,45 @@ export const questions = [
       },
       {
         value: 1,
-        text:
-          "My timing is highly regular, even I like to code late-night, I know my responsibilities."
+        text: "My timing is highly regular, even I like to code late-night, I know my responsibilities."
       }
     ]
   },
   {
     q: "Which one does describe you better?",
-    r: [
-      {
+    r: [{
         value: 3,
-        text:
-          "I prefer to work when very few folks are around. I am not visible in all-hands meetings."
+        text: "I prefer to work when very few folks are around. I am not visible in all-hands meetings."
       },
       {
         value: 1,
-        text:
-          "I prefer to work in a quiet environment. To share opinions and discoveries is important."
+        text: "I prefer to work in a quiet environment. To share opinions and discoveries is important."
       },
       {
         value: 1,
-        text:
-          "I focus on my work (maybe listening music) and I like to share my opinions and discoveries."
+        text: "I focus on my work (maybe listening music) and I like to share my opinions and discoveries."
       }
     ]
   },
   {
     q: "Preferred style",
-    r: [
-      {
+    r: [{
         value: 2,
-        text:
-          "My laptop screen background is normally a landscape, I often change defaults."
+        text: "My laptop screen background is normally a landscape, I often change defaults."
       },
       {
         value: 3,
-        text:
-          "My laptop screen background color is black, I always change defaults."
+        text: "My laptop screen background color is black, I always change defaults."
       },
       {
         value: 1,
-        text:
-          "I don't remember my laptop screen background, surely is the default."
+        text: "I don't remember my laptop screen background, surely is the default."
       }
     ]
   },
   {
     q: "Does your keyboard have worn keys?",
-    r: [
-      {
+    r: [{
         value: 2,
         text: "Yes, keys such as a, s, d and w."
       },
@@ -150,21 +133,17 @@ export const questions = [
   },
   {
     q: "Do you remember your code?",
-    r: [
-      {
+    r: [{
         value: 1,
-        text:
-          "I understand the code and is easy for me to find something but I don't know every line."
+        text: "I understand the code and is easy for me to find something but I don't know every line."
       },
       {
         value: 3,
-        text:
-          "I know every line of code that has gone into production so I fix bugs in hours vs days."
+        text: "I know every line of code that has gone into production so I fix bugs in hours vs days."
       },
       {
         value: 2,
-        text:
-          "I know every line of code that has gone into sandbox so I don't fix bugs in production."
+        text: "I know every line of code that has gone into sandbox so I don't fix bugs in production."
       },
       {
         value: 1,
@@ -175,11 +154,9 @@ export const questions = [
   },
   {
     q: "Are you a full-stack engineer?",
-    r: [
-      {
+    r: [{
         value: 3,
-        text:
-          "Yes, code is code, I don't care whether it is front-end, back-end, API, database, serverless, etc. and I rarely do UI work."
+        text: "Yes, code is code, I don't care whether it is front-end, back-end, API, database, serverless, etc. and I rarely do UI work."
       },
       {
         value: 2,
@@ -187,8 +164,7 @@ export const questions = [
       },
       {
         value: 1,
-        text:
-          "No, I can code anything but I also do UI work... wait, but front-end and UI are related, isn't it?."
+        text: "No, I can code anything but I also do UI work... wait, but front-end and UI are related, isn't it?."
       },
       {
         value: 1,
@@ -197,10 +173,8 @@ export const questions = [
     ]
   },
   {
-    q:
-      'Can you convert "thought" into "code" in your mind and write it in an iterative fashion?',
-    r: [
-      {
+    q: 'Can you convert "thought" into "code" in your mind and write it in an iterative fashion?',
+    r: [{
         value: 3,
         text: "Yes, I always do this."
       },
@@ -215,10 +189,8 @@ export const questions = [
     ]
   },
   {
-    q:
-      "Given a product feature, can write that entire feature in one or two sittings of 4 to 6 hours with a caffeinated drink without distraction?",
-    r: [
-      {
+    q: "Given a product feature, can write that entire feature in one or two sittings of 4 to 6 hours with a caffeinated drink without distraction?",
+    r: [{
         value: 2,
         text: "I don't like caffeinated drinks dude."
       },
@@ -238,11 +210,9 @@ export const questions = [
   },
   {
     q: "Do you look at help documentation of classes or methods?",
-    r: [
-      {
+    r: [{
         value: 1,
-        text:
-          "Yes, even I have great knowledge, sometimes I need some help, it's normal."
+        text: "Yes, even I have great knowledge, sometimes I need some help, it's normal."
       },
       {
         value: 2,
@@ -250,8 +220,7 @@ export const questions = [
       },
       {
         value: 3,
-        text:
-          "I know it in memory and can recall from memory. I write code at the same ease as writing English. No breaks, no pause, just type."
+        text: "I know it in memory and can recall from memory. I write code at the same ease as writing English. No breaks, no pause, just type."
       },
       {
         value: 2,
@@ -261,10 +230,8 @@ export const questions = [
     ]
   },
   {
-    q:
-      "Are you learning new frameworks, languages ahead of everyone in the company? Do you gobble up, setup, experiment before anyone is getting started?",
-    r: [
-      {
+    q: "Are you learning new frameworks, languages ahead of everyone in the company? Do you gobble up, setup, experiment before anyone is getting started?",
+    r: [{
         value: 1,
         text: "Only on weekends if I have the time."
       },
@@ -280,31 +247,25 @@ export const questions = [
   },
   {
     q: "Do you like to teach others and share your experience?",
-    r: [
-      {
+    r: [{
         value: 3,
-        text:
-          "It takes too long to teach or discuss with others, I would rather do it myself."
+        text: "It takes too long to teach or discuss with others, I would rather do it myself."
       },
       {
         value: 1,
-        text:
-          "Of course! to share knowledge is necessary to have a better team so a better product."
+        text: "Of course! to share knowledge is necessary to have a better team so a better product."
       }
     ]
   },
   {
-    q:
-      "Do you write quality code and know exactly how the code has to evolve, and have a mental model of overall code structure?",
-    r: [
-      {
+    q: "Do you write quality code and know exactly how the code has to evolve, and have a mental model of overall code structure?",
+    r: [{
         value: 3,
         text: "Yes."
       },
       {
         value: 2,
-        text:
-          'Sometimes I can\'t do some things and I have to find a "hack" temporarily.'
+        text: 'Sometimes I can\'t do some things and I have to find a "hack" temporarily.'
       },
       {
         value: 1,
@@ -314,11 +275,9 @@ export const questions = [
   },
   {
     q: "Which one does describe better the way to write documentation?",
-    r: [
-      {
+    r: [{
         value: 3,
-        text:
-          "I write at most one design document, and the rest is in the code."
+        text: "I write at most one design document, and the rest is in the code."
       },
       {
         value: 2,
@@ -331,10 +290,8 @@ export const questions = [
     ]
   },
   {
-    q:
-      "Is your life miserable with the process, meetings, training, and other non-value-added activities in your job?",
-    r: [
-      {
+    q: "Is your life miserable with the process, meetings, training, and other non-value-added activities in your job?",
+    r: [{
         value: 3,
         text: "Yes, I'm considering looking for another job."
       },
@@ -344,8 +301,7 @@ export const questions = [
       },
       {
         value: 1,
-        text:
-          "No, all of that is part of the job and have some important non-technical values."
+        text: "No, all of that is part of the job and have some important non-technical values."
       }
     ]
   }

@@ -1,19 +1,19 @@
 export const common = {
-  quote:
-    "Si tienes a un 10x engineer como parte de tus primeros ingenieros, incrementas las posibilidades de éxito de tu startup significativamente.",
+  quote: "Si tienes a un 10x engineer como parte de tus primeros ingenieros, incrementas las posibilidades de éxito de tu startup significativamente.",
   qAuthor: "Shekhar Kirani",
   title: "¿Eres un 10x Engineer?",
   button: "Iniciar Test",
   robot: "Sólo debemos asegurarnos 🤖",
   origin: [
-    "El origen del 10x Engineers Test is ",
+    "El origen del 10x Engineers Test es ",
     "este hilo de Shekhar Kirani en twitter",
     " que fue fuertemente rechazado por la comunidad. Si no sabes de que estamos hablando, echa un vistazo."
   ],
   createdBy: "Creado por",
   contribute: "Contribuye en",
   changeLang: "Switch to english 🇬🇧",
-  changeLangLink: "https://10xengineers.netlify.com"
+  changeLangLink: "https://10xengineers.netlify.com",
+  or: "o"
 };
 
 export function resultText(lvl) {
@@ -43,14 +43,11 @@ export function shareText(lvl) {
   return r;
 }
 
-export const questions = [
-  {
+export const questions = [{
     q: "¿Qué piensas de las reuniones?",
-    r: [
-      {
+    r: [{
         value: 1,
-        text:
-          "Las reuniones son necesarias para construir una startup saludable y desarrollar la comunicación."
+        text: "Las reuniones son necesarias para construir una startup saludable y desarrollar la comunicación."
       },
       {
         value: 3,
@@ -58,75 +55,61 @@ export const questions = [
       },
       {
         value: 3,
-        text:
-          'Solo asisto a "Reuniones de personal" convocadas por el gerente para discutir características y estado de producto.'
+        text: 'Solo asisto a "Reuniones de personal" convocadas por el gerente para discutir características y estado de producto.'
       }
     ]
   },
   {
     q: "¿Qué tal tus tiempos en la oficina? ¿Eres responsable con eso?",
-    r: [
-      {
+    r: [{
         value: 3,
-        text:
-          "Mis tiempos son muy irregulares, me gusta programar hasta tarde así que llego tarde a la oficina."
+        text: "Mis tiempos son muy irregulares, me gusta programar hasta tarde así que llego tarde a la oficina."
       },
       {
         value: 2,
-        text:
-          "Mis tiempos a veces son irregulares pero siempre trato de estar a tiempo."
+        text: "Mis tiempos a veces son irregulares pero siempre trato de estar a tiempo."
       },
       {
         value: 1,
-        text:
-          "Mis tiempos son muy regulares, aún cuando programo hasta tarde, conozco mis responsabilidades."
+        text: "Mis tiempos son muy regulares, aún cuando programo hasta tarde, conozco mis responsabilidades."
       }
     ]
   },
   {
     q: "¿Cuál de estas opciones te describe mejor?",
-    r: [
-      {
+    r: [{
         value: 3,
-        text:
-          "Prefiero trabajar cuando hay pocas personas al rededor. No soy visible en reuniones de muchas manos."
+        text: "Prefiero trabajar cuando hay pocas personas al rededor. No soy visible en reuniones de muchas manos."
       },
       {
         value: 1,
-        text:
-          "Prefiero trabajar en un ambiente tranquilo. Compartir mis opiniones es importante."
+        text: "Prefiero trabajar en un ambiente tranquilo. Compartir mis opiniones es importante."
       },
       {
         value: 1,
-        text:
-          "Me enfoco en mi trabajo (quizás con música) y me gusta compartir opiniones y descubrimientos."
+        text: "Me enfoco en mi trabajo (quizás con música) y me gusta compartir opiniones y descubrimientos."
       }
     ]
   },
   {
     q: "Estilo preferido",
-    r: [
-      {
+    r: [{
         value: 2,
-        text:
-          "El fondo de pantalla de mi laptop normalmente es un paisaje, suelo cambiar los valores por defecto."
+        text: "El fondo de pantalla de mi laptop normalmente es un paisaje, suelo cambiar los valores por defecto."
       },
       {
         value: 3,
-        text:
-          "El fondo de pantalla de mi laptop es negro y siempre cambio los valores por defecto."
+        text: "El fondo de pantalla de mi laptop es negro y siempre cambio los valores por defecto."
       },
       {
         value: 1,
-        text:
-          "No recuerdo el fondo de pantalla de mi laptop, seguramente es el por defecto."
+        text: "No recuerdo el fondo de pantalla de mi laptop, seguramente es el por defecto."
       }
     ]
   },
   {
     q: "¿Tu teclado tiene teclas desgastadas?",
-    r: [
-      {
+    r: [{
         value: 2,
         text: "Si, las teclas a, s, d y w."
       },
@@ -150,21 +133,17 @@ export const questions = [
   },
   {
     q: "¿Recuerdas lo que programas?",
-    r: [
-      {
+    r: [{
         value: 1,
-        text:
-          "Entiendo el código y para mí es fácil encontrar lo que sea pero no conozco cada línea."
+        text: "Entiendo el código y para mí es fácil encontrar lo que sea pero no conozco cada línea."
       },
       {
         value: 3,
-        text:
-          "Conozco cada línea de código que está en producción, así que soluciono errores en horas en lugar de días."
+        text: "Conozco cada línea de código que está en producción, así que soluciono errores en horas en lugar de días."
       },
       {
         value: 2,
-        text:
-          "Conozco cada línea de código que está en el entorno de pruebas y así no hay conflictos en producción."
+        text: "Conozco cada línea de código que está en el entorno de pruebas y así no hay conflictos en producción."
       },
       {
         value: 1,
@@ -175,11 +154,9 @@ export const questions = [
   },
   {
     q: "¿Eres un ingeniero full-stack?",
-    r: [
-      {
+    r: [{
         value: 3,
-        text:
-          "Si, código es código, no importa si es front-end, back-end, API, base de datos, serverless, etc. Rara vez hago trabajo de UI."
+        text: "Si, código es código, no importa si es front-end, back-end, API, base de datos, serverless, etc. Rara vez hago trabajo de UI."
       },
       {
         value: 2,
@@ -187,8 +164,7 @@ export const questions = [
       },
       {
         value: 1,
-        text:
-          "No, puedo programar lo que sea pero también hago trabajo de UI... espera, pero front-end y UI están relacionados, ¿o no?"
+        text: "No, puedo programar lo que sea pero también hago trabajo de UI... espera, pero front-end y UI están relacionados, ¿o no?"
       },
       {
         value: 1,
@@ -197,10 +173,8 @@ export const questions = [
     ]
   },
   {
-    q:
-      '¿Puedes convertir "pensamientos" a "código" en tu mente y escribirlos de manera iterativa?',
-    r: [
-      {
+    q: '¿Puedes convertir "pensamientos" a "código" en tu mente y escribirlos de manera iterativa?',
+    r: [{
         value: 3,
         text: "Si, es lo que siempre hago."
       },
@@ -215,17 +189,14 @@ export const questions = [
     ]
   },
   {
-    q:
-      "Dado un requerimiento de producto, ¿puedes desarrollarlo en una o dos sesiones de 4 a 6 horas con un café y sin distracciones?",
-    r: [
-      {
+    q: "Dado un requerimiento de producto, ¿puedes desarrollarlo en una o dos sesiones de 4 a 6 horas con un café y sin distracciones?",
+    r: [{
         value: 2,
         text: "Pero ni me gusta el café."
       },
       {
         value: 3,
-        text:
-          "Por supuesto, estoy haciendo este test justo antes de la segunda sesión."
+        text: "Por supuesto, estoy haciendo este test justo antes de la segunda sesión."
       },
       {
         value: 3,
@@ -239,11 +210,9 @@ export const questions = [
   },
   {
     q: "¿Buscas ayuda en la documentación de clases o métodos?",
-    r: [
-      {
+    r: [{
         value: 1,
-        text:
-          "Si, a pesar de mi conocimiento a veces necesito ayuda, es normal."
+        text: "Si, a pesar de mi conocimiento a veces necesito ayuda, es normal."
       },
       {
         value: 2,
@@ -251,8 +220,7 @@ export const questions = [
       },
       {
         value: 3,
-        text:
-          "Los sé de memoria. Escribo código tan fácil como escribo español, sin descansos, sin pausa, sólo escribo."
+        text: "Los sé de memoria. Escribo código tan fácil como escribo español, sin descansos, sin pausa, sólo escribo."
       },
       {
         value: 2,
@@ -262,10 +230,8 @@ export const questions = [
     ]
   },
   {
-    q:
-      "¿Estás aprendiendo nuevos frameworks, lenguajes primero que cualquiera en la compañía?, ¿Lo lees, configuras y experimentas antes que otros?",
-    r: [
-      {
+    q: "¿Estás aprendiendo nuevos frameworks, lenguajes primero que cualquiera en la compañía?, ¿Lo lees, configuras y experimentas antes que otros?",
+    r: [{
         value: 1,
         text: "Sólo los fines de semana si tengo tiempo."
       },
@@ -281,31 +247,25 @@ export const questions = [
   },
   {
     q: "¿Te gusta enseñar a otros y compartir tu experiencia?",
-    r: [
-      {
+    r: [{
         value: 3,
-        text:
-          "Toma mucho tiempo enseñar o discutir con otros, mejor lo haría yo mismo."
+        text: "Toma mucho tiempo enseñar o discutir con otros, mejor lo haría yo mismo."
       },
       {
         value: 1,
-        text:
-          "¡Claro! compartir conocimiento es necesario para que el equipo mejore y el producto final."
+        text: "¡Claro! compartir conocimiento es necesario para que el equipo mejore y el producto final."
       }
     ]
   },
   {
-    q:
-      "¿Escribes código de calidad, sabes exactamente como debe evolucionar y tienes un modelo mental de toda la estructura general?",
-    r: [
-      {
+    q: "¿Escribes código de calidad, sabes exactamente como debe evolucionar y tienes un modelo mental de toda la estructura general?",
+    r: [{
         value: 3,
         text: "Si."
       },
       {
         value: 2,
-        text:
-          "Algunas veces no puedo hacer algo y me veo obligado a usar un truco temporalmente."
+        text: "Algunas veces no puedo hacer algo y me veo obligado a usar un truco temporalmente."
       },
       {
         value: 1,
@@ -314,13 +274,10 @@ export const questions = [
     ]
   },
   {
-    q:
-      "¿Cuál de estas opciones define mejor la forma en la que preparas documentación?",
-    r: [
-      {
+    q: "¿Cuál de estas opciones define mejor la forma en la que preparas documentación?",
+    r: [{
         value: 3,
-        text:
-          "Escribo como máximo un documento de diseño, el resto está en el código."
+        text: "Escribo como máximo un documento de diseño, el resto está en el código."
       },
       {
         value: 2,
@@ -328,16 +285,13 @@ export const questions = [
       },
       {
         value: 2,
-        text:
-          "Todo necesita una documentación adecuada para un mejor mantenimiento."
+        text: "Todo necesita una documentación adecuada para un mejor mantenimiento."
       }
     ]
   },
   {
-    q:
-      "¿Tu vida es miserable con los procesos, reuniones, entrenamientos y otras actividades sin valor añadido en tu trabajo?",
-    r: [
-      {
+    q: "¿Tu vida es miserable con los procesos, reuniones, entrenamientos y otras actividades sin valor añadido en tu trabajo?",
+    r: [{
         value: 3,
         text: "Si, estoy considerando buscar otro trabajo."
       },
@@ -347,8 +301,7 @@ export const questions = [
       },
       {
         value: 1,
-        text:
-          "No, todo eso es parte del trabajo y tiene un importante valor no técnico."
+        text: "No, todo eso es parte del trabajo y tiene un importante valor no técnico."
       }
     ]
   }
