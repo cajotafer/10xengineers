@@ -21,3 +21,6 @@ Try the test in [English](https://10xengineers.netlify.com) or [Spanish](https:/
 If you want to help making 10x Engineers Test better, just PR your idea, I am sure we can improve this test quality. The conributions are ruled by the [Code of Conduct](/cajotafer/10xengineers/blob/master/CODE_OF_CONDUCT.md) of the project.
 
 Let's make this world a better place to live together.
+
+----
+[Post](https://www.xataka.com/otros/que-10x-engineer-donde-surge-polemica-que-mitifica-figura-genio-programador) where our test is mentioned in xataka.com
