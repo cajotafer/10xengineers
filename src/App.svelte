@@ -14,6 +14,13 @@
     started = true;
   }
 
+  function handleRestart() {
+    started = false;
+    count = 0;
+    total = 0;
+    finished = false;
+  }
+
   function showResult(total) {
     const MAX = 45;
     const STEP = 3;
@@ -143,6 +150,9 @@
       </a>
       {common.origin[2]}
     </i>
+    <div class="btn-container flex spacing">
+      <button on:click={handleRestart}>{common.try}</button>
+    </div>
     <script>
       window.twttr = (function(d, s, id) {
         var js,
