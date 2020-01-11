@@ -14,7 +14,8 @@ export const common = {
   contribute: "Contribute on",
   changeLang: "Cambiar a español 🇪🇸",
   changeLangLink: "https://10xengineers.netlify.com/es/",
-  try: "Try it again"
+  try: "Try it again",
+  or: "or"
 };
 
 export function resultText(lvl) {

@@ -6,7 +6,7 @@ export const common = {
   button: "Iniciar Test",
   robot: "Sólo debemos asegurarnos 🤖",
   origin: [
-    "El origen del 10x Engineers Test is ",
+    "El origen del 10x Engineers Test es ",
     "este hilo de Shekhar Kirani en twitter",
     " que fue fuertemente rechazado por la comunidad. Si no sabes de que estamos hablando, echa un vistazo."
   ],
@@ -14,7 +14,8 @@ export const common = {
   contribute: "Contribuye en",
   changeLang: "Switch to english 🇬🇧",
   changeLangLink: "https://10xengineers.netlify.com",
-  try: "Intentar de nuevo"
+  try: "Intentar de nuevo",
+  or: "o"
 };
 
 export function resultText(lvl) {

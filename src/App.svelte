@@ -1,7 +1,7 @@
 <script>
   export let texts;
   export let lang;
-  const { common, questions, resultText, shareText } = texts
+  const { common, questions, resultText, shareText } = texts;
   let count = 0;
   let total = 0;
   let started = false;
@@ -35,8 +35,8 @@
           break;
         } else reduc -= STEP;
     }
-    result = resultText(lvl)
-    share = shareText(lvl)
+    result = resultText(lvl);
+    share = shareText(lvl);
 
     finished = true;
   }
@@ -90,7 +90,7 @@
     <div class="btn-container flex spacing">
       <button on:click={handleStart}>{common.button}</button>
     </div>
-    <a href="{common.changeLangLink}">{common.changeLang}</a>
+    <a href={common.changeLangLink}>{common.changeLang}</a>
   {:else if finished === false && robot === false}
     <h2>{questions[count].q}</h2>
     <div class="btn-container flex spacing">
@@ -128,7 +128,7 @@
         data-related="skirani, cajotafer, cvander, dhh, addyosmani">
         Tweet
       </a>
-      &nbsp;&nbsp;or&nbsp;&nbsp;
+      &nbsp;&nbsp;{common.or}&nbsp;&nbsp;
       <div
         class="fb-share-button"
         data-href="https://10xengineers.netlify.com/"
